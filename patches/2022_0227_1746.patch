@@ -1,0 +1,12 @@
+--- openapi_bk.yaml	2022-02-27 17:45:46.000000000 +0900
++++ openapi.yaml	2022-02-27 17:46:31.000000000 +0900
+@@ -73,6 +73,9 @@
+             application/json:
+               schema:
+                 $ref: "#/components/schemas/Pet"
++              examples:
++                id1:
++                  $ref: "./examples/pets/id1.yaml"
+         default:
+           description: unexpected error
+           content:
