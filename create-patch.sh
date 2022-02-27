@@ -14,3 +14,5 @@ patch_file=./patches/"$(date +%Y_%m%d_%H%M)".patch
 echo "$yaml_diff" > "$patch_file"
 
 echo "New patch file is created. -> $patch_file"
+
+patch "$SPECFILE_LOCAL" <"$patch_file"
