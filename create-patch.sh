@@ -4,7 +4,7 @@ cd "$(dirname "$0")" || exit 1
 
 source ./const.sh
 
-yaml_diff="$(diff -u "$SPECFILE_BK" "$SPECFILE")"
+yaml_diff="$(diff -u "$SPECFILE_LOCAL" "$SPECFILE_INDEX")"
 if [ -z "$yaml_diff" ]; then
   echo "Diff doesn't exists."
   exit 1

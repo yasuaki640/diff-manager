@@ -3,7 +3,7 @@
 # shellcheck disable=SC2034
 readonly ORIGINAL_YAML_URL=https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore.yaml
 
-readonly SPECFILE=openapi.yaml
-readonly SPECFILE_BK=openapi_bk.yaml
+readonly SPECFILE_INDEX=index.yaml
+readonly SPECFILE_LOCAL=local.yaml
 
 readonly GH_ACCESS_TOKEN=
